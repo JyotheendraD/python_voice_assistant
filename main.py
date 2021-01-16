@@ -27,3 +27,11 @@ def input_command():
         my_command = "exception" #this is written because if microphone failes it prints this command.
         print("microphone not working properly")
     return my_command
+
+def start_assname():
+    command = input_command()
+    command = command.replace("hey assname","")
+    if 'time' in command:
+        current_time = datetime.datetime.now().strftime('%H%M')
+        talk(current_time)
+
