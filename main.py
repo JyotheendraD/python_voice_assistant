@@ -34,9 +34,16 @@ def start_assname():
     if 'time' in command:
         current_time = datetime.datetime.now().strftime('%H%M')
         talk(current_time)
+    
     elif 'play' in command:
         song = command.replace("play","")
         talk("playing"+song)
         pywhatkit.playonyt(song)
+
+    elif "tell me about" in command:
+        keyword = command.replace("tell me about","")
+        info = wikipedia.summary(keyword,1)
+        talk(info)
+    
 
 start_assname()  #main function call
