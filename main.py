@@ -34,5 +34,9 @@ def start_assname():
     if 'time' in command:
         current_time = datetime.datetime.now().strftime('%H%M')
         talk(current_time)
+    elif 'play' in command:
+        song = command.replace("play","")
+        talk("playing"+song)
+        pywhatkit.playonyt(song)
 
 start_assname()  #main function call
