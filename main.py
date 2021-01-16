@@ -8,3 +8,6 @@ engine = pyttsx3.init() #initializing the library
 voices = engine.getProperty('voices')  #getting all the available voice versions for our assistant
 #engine.setProperty("voice",voices[1].id) #this is the index of female voice
 
+def talk(text):
+    engine.say(text)
+    engine.runAndWait()
