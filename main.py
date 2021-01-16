@@ -45,5 +45,8 @@ def start_assname():
         info = wikipedia.summary(keyword,1)
         talk(info)
     
+    else:
+        talk("Sorry! I didn't get that!")
+    
 
 start_assname()  #main function call
