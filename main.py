@@ -49,4 +49,5 @@ def start_assname():
         talk("Sorry! I didn't get that!")
     
 
-start_assname()  #main function call
+while(True):
+    start_assname()  #main function call
