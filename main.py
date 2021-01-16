@@ -35,3 +35,4 @@ def start_assname():
         current_time = datetime.datetime.now().strftime('%H%M')
         talk(current_time)
 
+start_assname()  #main function call
